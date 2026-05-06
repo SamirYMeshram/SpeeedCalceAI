@@ -1,0 +1,4 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_app_gradient" android:orientation="vertical" android:padding="22dp">
+    <TextView android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&lt; AI Report" android:textColor="@color/text_white" android:textSize="28sp" android:textStyle="bold" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:background="@drawable/bg_glass_card" android:padding="22dp" android:text="Weekly AI Report\n\nBackend integration placeholder. Send only performance data to your backend, then call Grok API from there." android:textColor="@color/text_white" android:textSize="19sp" />
+</LinearLayout>

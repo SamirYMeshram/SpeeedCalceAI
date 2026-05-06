@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_app_gradient">
+    <com.yourname.speedcalcai.views.LiquidGlassBackgroundView android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="Session Result" android:textColor="@color/text_white" android:textSize="30sp" android:textStyle="bold" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:background="@drawable/bg_glass_card" android:orientation="vertical" android:padding="20dp">
+                <TextView android:id="@+id/tvResultTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Addition Summary" android:textColor="@color/primary_cyan" android:textSize="26sp" android:textStyle="bold" />
+                <TextView android:id="@+id/tvResultStats" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Stats" android:textColor="@color/text_white" android:textSize="18sp" />
+                <ProgressBar android:id="@+id/progressAccuracy" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="12dp" android:layout_marginTop="16dp" android:max="100" android:progress="0" />
+                <Button android:id="@+id/btnHistory" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="16dp" android:background="@drawable/bg_outline_button" android:text="Open Attempt History" android:textAllCaps="false" android:textColor="@color/primary_cyan" android:textStyle="bold" />
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="Question Review" android:textColor="@color/text_white" android:textSize="24sp" android:textStyle="bold" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerReview" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

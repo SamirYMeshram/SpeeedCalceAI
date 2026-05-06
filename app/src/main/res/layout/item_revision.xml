@@ -1,0 +1,4 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginVertical="8dp" android:background="@drawable/bg_glass_card_soft" android:orientation="vertical" android:padding="18dp">
+    <TextView android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Make 10 / 100" android:textColor="@color/text_white" android:textSize="21sp" android:textStyle="bold" />
+    <TextView android:id="@+id/tvBody" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Look for pairs: 7+3, 8+2, 48+52." android:textColor="@color/text_gray" android:textSize="16sp" />
+</LinearLayout>

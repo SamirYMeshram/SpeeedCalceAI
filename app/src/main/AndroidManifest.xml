@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="SpeedCalc AI"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SpeedCalcAI">
+
+        <activity android:name=".activities.AiReportActivity" />
+        <activity android:name=".activities.SettingsActivity" />
+        <activity android:name=".activities.AttemptReviewActivity" />
+        <activity android:name=".activities.AttemptHistoryActivity" />
+        <activity android:name=".activities.ResultActivity" />
+        <activity android:name=".activities.PracticeActivity" />
+        <activity android:name=".activities.RegisterActivity" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.MainActivity" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

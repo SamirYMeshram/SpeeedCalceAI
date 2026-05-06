@@ -1,0 +1,6 @@
+SpeedCalcAI verification report
+XML parse errors: 0
+Missing @color resources: []
+Duplicate styles: {}
+Java file count: 47
+Resource XML count: 44

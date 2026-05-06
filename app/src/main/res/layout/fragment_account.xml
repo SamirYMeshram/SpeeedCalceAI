@@ -1,0 +1,13 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Account" android:textColor="@color/text_white" android:textSize="32sp" android:textStyle="bold" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:background="@drawable/bg_glass_card" android:orientation="vertical" android:padding="22dp">
+            <TextView android:id="@+id/tvName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Student" android:textColor="@color/text_white" android:textSize="26sp" android:textStyle="bold" />
+            <TextView android:id="@+id/tvEmail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="offline@student.com" android:textColor="@color/text_gray" android:textSize="16sp" />
+            <TextView android:id="@+id/tvLevel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:background="@drawable/bg_chip" android:padding="16dp" android:text="Beginner  |  0 pts" android:textColor="@color/primary_cyan" android:textSize="18sp" android:textStyle="bold" />
+        </LinearLayout>
+        <TextView android:id="@+id/tvInsights" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:background="@drawable/bg_glass_card_soft" android:padding="18dp" android:text="Learning Insights\nWeekly: 0 questions\nDaily Quiz: 0 attempts\nWorkout: 0 sessions\nBattles: 0/0" android:textColor="@color/text_white" android:textSize="18sp" />
+        <Button android:id="@+id/btnSettings" android:layout_width="match_parent" android:layout_height="62dp" android:layout_marginTop="16dp" android:background="@drawable/bg_outline_button" android:text="Settings" android:textAllCaps="false" android:textColor="@color/text_white" android:textStyle="bold" />
+        <Button android:id="@+id/btnSignOut" android:layout_width="match_parent" android:layout_height="62dp" android:layout_marginTop="12dp" android:background="@drawable/bg_outline_button" android:text="Sign Out" android:textAllCaps="false" android:textColor="@color/error_red" android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

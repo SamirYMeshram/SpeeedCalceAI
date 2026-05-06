@@ -1,0 +1,18 @@
+<resources>
+    <color name="bg_dark">#07151C</color>
+    <color name="bg_dark_2">#0A1D26</color>
+    <color name="card_dark">#1E1E1E</color>
+    <color name="glass_dark">#661E2730</color>
+    <color name="glass_light">#33FFFFFF</color>
+    <color name="glass_stroke">#55FFFFFF</color>
+    <color name="primary_cyan">#00A9D6</color>
+    <color name="primary_cyan_dark">#007FA6</color>
+    <color name="success_green">#20C56B</color>
+    <color name="error_red">#FF4B4B</color>
+    <color name="warning_orange">#FF9800</color>
+    <color name="purple_glow">#9C27B0</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_gray">#BDBDBD</color>
+    <color name="muted">#758A96</color>
+    <color name="transparent">#00000000</color>
+</resources>

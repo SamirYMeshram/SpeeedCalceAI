@@ -1,0 +1,42 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_glass_card">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+        <View android:layout_width="80dp" android:layout_height="5dp" android:layout_gravity="center_horizontal" android:background="@drawable/bg_outline_button" />
+        <TextView android:id="@+id/tvSheetTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:gravity="center" android:text="Practice Setup" android:textColor="@color/text_white" android:textSize="30sp" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="Select range and start." android:textColor="@color/text_gray" android:textSize="16sp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="Question mode" android:textColor="@color/text_white" android:textSize="20sp" android:textStyle="bold" />
+        <RadioGroup android:id="@+id/rgQuestionType" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:orientation="horizontal">
+            <RadioButton android:id="@+id/rbDirect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="Direct Input" android:textColor="@color/text_white" />
+            <RadioButton android:id="@+id/rbMcq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="18dp" android:text="MCQ" android:textColor="@color/text_white" />
+        </RadioGroup>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="Number Range" android:textColor="@color/text_white" android:textSize="20sp" android:textStyle="bold" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="10dp">
+            <EditText android:id="@+id/etFrom" android:layout_width="0dp" android:layout_height="58dp" android:layout_weight="1" android:background="@drawable/bg_input" android:hint="From" android:inputType="numberSigned" android:text="2" android:textColor="@color/text_white" android:textColorHint="@color/text_gray" />
+            <Space android:layout_width="18dp" android:layout_height="1dp" />
+            <EditText android:id="@+id/etTo" android:layout_width="0dp" android:layout_height="58dp" android:layout_weight="1" android:background="@drawable/bg_input" android:hint="To" android:inputType="numberSigned" android:text="99" android:textColor="@color/text_white" android:textColorHint="@color/text_gray" />
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="Numbers in Question" android:textColor="@color/text_white" android:textSize="20sp" android:textStyle="bold" />
+        <Spinner android:id="@+id/spNumbers" android:layout_width="match_parent" android:layout_height="54dp" android:background="@drawable/bg_input" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="Difficulty" android:textColor="@color/text_white" android:textSize="20sp" android:textStyle="bold" />
+        <Spinner android:id="@+id/spDifficulty" android:layout_width="match_parent" android:layout_height="54dp" android:background="@drawable/bg_input" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="Total Questions" android:textColor="@color/text_white" android:textSize="20sp" android:textStyle="bold" />
+        <EditText android:id="@+id/etTotalQuestions" android:layout_width="match_parent" android:layout_height="58dp" android:background="@drawable/bg_input" android:inputType="number" android:text="10" android:textColor="@color/text_white" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:orientation="horizontal">
+            <Button android:id="@+id/btnCancel" android:layout_width="0dp" android:layout_height="58dp" android:layout_weight="1" android:background="@drawable/bg_outline_button" android:text="Cancel" android:textAllCaps="false" android:textColor="@color/primary_cyan" android:textStyle="bold" />
+            <Space android:layout_width="16dp" android:layout_height="1dp" />
+            <Button android:id="@+id/btnStart" android:layout_width="0dp" android:layout_height="58dp" android:layout_weight="1" android:background="@drawable/bg_primary_button" android:text="Start" android:textAllCaps="false" android:textColor="@color/text_white" android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

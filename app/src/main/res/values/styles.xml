@@ -1,0 +1,12 @@
+<resources>
+    <style name="Theme.SpeedCalcAI" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:navigationBarColor">#000000</item>
+        <item name="android:statusBarColor">@color/primary_cyan</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorPrimary">@color/primary_cyan</item>
+        <item name="colorPrimaryVariant">@color/primary_cyan_dark</item>
+        <item name="colorAccent">@color/primary_cyan</item>
+    </style>
+</resources>

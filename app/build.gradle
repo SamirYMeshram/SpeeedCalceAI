@@ -1,0 +1,39 @@
+plugins {
+    id 'com.android.application'
+    // Add this only after putting google-services.json in app/: id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.yourname.speedcalcai'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.yourname.speedcalcai'
+        minSdk 23
+        targetSdk 35
+        versionCode 1
+        versionName '1.0'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
+    implementation 'com.google.android.material:material:1.12.0'
+
+    implementation 'androidx.room:room-runtime:2.6.1'
+    annotationProcessor 'androidx.room:room-compiler:2.6.1'
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    // Firebase is ready for Phase 7. Add google-services plugin and google-services.json before using it.
+    implementation platform('com.google.firebase:firebase-bom:33.7.0')
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-firestore'
+}

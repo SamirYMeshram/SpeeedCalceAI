@@ -1,0 +1,15 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Dashboard" android:textColor="@color/text_white" android:textSize="32sp" android:textStyle="bold" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:background="@drawable/bg_glass_card" android:orientation="vertical" android:padding="20dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Performance Report" android:textColor="@color/text_white" android:textSize="26sp" android:textStyle="bold" />
+            <TextView android:id="@+id/tvReport" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Practice to unlock your AI performance report." android:textColor="@color/text_gray" android:textSize="16sp" />
+        </LinearLayout>
+        <TextView android:id="@+id/tvSummary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:background="@drawable/bg_glass_card_soft" android:padding="18dp" android:text="Summary" android:textColor="@color/text_white" android:textSize="18sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:gravity="center" android:text="Module-wise Stats" android:textColor="@color/primary_cyan" android:textSize="28sp" android:textStyle="bold" />
+        <com.github.mikephil.charting.charts.PieChart android:id="@+id/pieChart" android:layout_width="match_parent" android:layout_height="360dp" android:layout_marginTop="12dp" android:background="@drawable/bg_glass_card_soft" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:gravity="center" android:text="Accuracy Over Time" android:textColor="@color/text_white" android:textSize="24sp" android:textStyle="bold" />
+        <com.github.mikephil.charting.charts.LineChart android:id="@+id/lineChart" android:layout_width="match_parent" android:layout_height="320dp" android:layout_marginTop="12dp" android:background="@drawable/bg_glass_card_soft" />
+    </LinearLayout>
+</ScrollView>
